@@ -1,0 +1,21 @@
+@use '../../styles/utils/_variables' as *
+@use '../../styles/utils/_placeholders'
+
+.container
+    height: 99vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    h1
+        font-size: 150px
+        margin-bottom: -30px
+
+    p
+        font-size: 14px
+        color: $text-hidden-color
+
+    .containerLink
+        @extend %default-link
+        width: 155px
