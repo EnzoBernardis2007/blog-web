@@ -8,7 +8,7 @@ export function Navbar() {
                 <Link className={style.link} to="/">Home</Link> 
             </div>
             <div className={style.container}>
-                <Link className={style.link} to="/posts">Posts</Link> 
+                <Link className={style.link} to="/logs">Logs</Link> 
             </div>
             <div className={style.container}>
                 <Link className={style.link} to="/about">Sobre</Link>

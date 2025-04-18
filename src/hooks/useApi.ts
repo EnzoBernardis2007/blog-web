@@ -8,13 +8,13 @@ export const useApi = () => {
     const request = async <T,>(method: 'get' | 'post', url: string, data?: any) => {
         setLoading(true)
         try {
-        const response = await api[method]<T>(url, data)
-        return response.data
+            const response = await api[method]<T>(url, data)
+            return response.data
         } catch (err) {
-        setError('Erro na requisição')
-        throw err
+            setError('Erro na requisição')
+            throw err
         } finally {
-        setLoading(false)
+            setLoading(false)
         }
     }
 
